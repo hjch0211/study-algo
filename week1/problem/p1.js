@@ -10,6 +10,8 @@ const safelyGet = (object, string) => {
     return backT(object, stringArray, 0, endIndex);
 };
 
+// [!] 경로가 정해져있기때문에 for문으로 그 길이 있는 지 없는 지만생각하면 됨. 재귀보다 나음
+
 const backT = (object, stringArray, index, endIndex) => {
     if (object === undefined) {
         return console.log(undefined);

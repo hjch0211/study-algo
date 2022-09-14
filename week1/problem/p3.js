@@ -18,6 +18,7 @@ const solution = (stringArray) => {
     console.log(_return);
 };
 
+// 함수 체이닝이 가능하므로 함수로 굳이 안빼도 되지 않았을까
 const refineArray = (stringArray) => {
     const string = stringArray.join("/");
     const _return = string.split("/");

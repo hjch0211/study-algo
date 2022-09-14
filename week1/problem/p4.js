@@ -7,7 +7,7 @@ const solution = (fetchPaper) => {
     fetchPaper()
         .then((res) => {
             const start = timer.start();
-            // performance.now()는 브라우저에서 지원
+            // performance.now()는 node.js도 지원함
             // Date 검색함 ms로 반환
             console.log(res);
             return res;
