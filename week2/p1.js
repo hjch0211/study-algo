@@ -1,3 +1,9 @@
+/**
+ * MBTI 검사 // 25분
+ * @param {*} survey
+ * @param {*} choices
+ * @returns
+ */
 function solution(survey, choices) {
     var answer = "";
     // []로 해주어서 틀렸었음...
