@@ -3,7 +3,7 @@
  * @param {} name
  * @returns
  */
-// 확실히 린트 프로그램이 에러를 검출해주지 못하니까 오타가 많았음
+// 오타가 많았음
 function solution(name) {
     var answer = 0; //최소 조작값 리턴
 
