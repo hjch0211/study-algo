@@ -17,6 +17,7 @@ function solution(n, wires) {
         links[v1].push(v2);
         links[v2].push(v1);
     });
+    console.log(links);
 
     /**
      * [root, exception]의 연결에서 exception부분을 자르고 root를 루트로 했을 때의 노드 개수

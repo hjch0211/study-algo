@@ -15,11 +15,11 @@ const solution = (grid) => {
     for (let i = 0; i < cases.length; i++) {
         getCicle(grid, DIRECTION[i]);
     }
-    // 탐색 종료 조건 : 이미 방문한 방향 -> visited 필요
 
     // answer 오름차순으로 반환하기
 
     // 중복된 사이클은 지워져야함
+
     // cases에서 0빼주기
     return answer;
 };
@@ -42,9 +42,15 @@ const getCicle = (grid, startDirection) => {
     let visited = [[startBlock, startDirection]]; //startBlock으로 들어온 방향 ex) ->S : [S,right] -> 처음으로 돌아온 케이스만 생각?
 
     for (let i = 0; stack.length !== 0; i++) {
-        const [currentBlock, currentDirection] = stack.pop();
+        const [currentBlock, currentDirection] = stack.pop(); //currentBlock의 위치를 알아야할 듯
         if (visited[0][0] === currentBlock && visited[0][1] === currentDirection) break;
-        const _nextDirection = getNextDirection(currentBlock, currentDirection);
+        const nextDirection = getNextDirection(currentBlock, currentDirection);
+        switch (nextDirection) {
+            case DIRECTION[0]:
+            case DIRECTION[1]:
+            case DIRECTION[2]:
+            case DIRECTION[3]:
+        }
         count++;
     }
 

@@ -35,7 +35,7 @@ const sliceName = (name) => {
     for (let i = name.length - 1; name[i] === "A"; i--) {
         left++;
     }
-    // 실수... A를 지워야하는데 A를 빼버림
+
     if (right <= left) {
         slicedName = name.slice(0, name.length - left);
     } else {
