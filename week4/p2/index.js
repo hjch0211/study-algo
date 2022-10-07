@@ -21,11 +21,12 @@ const solution = (n) => {
     const isValid = (map, row) => {
         for (let i = 1; i < row; i++) {
             if (map[i] === map[row]) return false;
-            if (Math.abs(map[i] - map[row]) === Math.abs(i - row)) return false;
+            if (Math.abs(map[i] - map[row]) === Math.abs(i - row)) return false; //대각선
         }
         return true;
     };
 
+    // 계산할 때 헷갈려서 i =1부터
     for (let i = 1; i <= n; i++) {
         const map = new Array(n + 1).fill(0); // [!] 어차피 한줄에 하나이므로 일차원 배열
         map[1] = i;

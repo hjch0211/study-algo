@@ -1,5 +1,6 @@
 // 33분
 // 최단 경로에 문제가 있음
+// 이 것도 백트래킹?
 function solution(numbers, hand) {
     var answer = "";
     const _hand = hand === "right" ? "R" : "L";
@@ -51,10 +52,9 @@ const getDistance = (queue, map, target) => {
     while (queue.length !== 0) {
         const [cy, cx] = queue.shift();
         if (map[cy][cx] === target) {
-            console.log(level);
             queue = [[cy, cx]];
             level[cy][cx] = count;
-            // console.log(map);
+            console.log(level);
             if (level[cy][cx] < minDistance) minDistance = level[cy][cx];
         }
         map[cy][cx] = "x";
