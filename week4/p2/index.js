@@ -7,6 +7,7 @@
 const solution = (n) => {
     var answer = 0;
 
+    // 클로져 추가
     const dfs = (map, row) => {
         // 재귀를 돌면서 row가 n이 될 때까지 돈다면 answer++
         if (row === n) answer++;
@@ -26,7 +27,7 @@ const solution = (n) => {
         return true;
     };
 
-    // 계산할 때 헷갈려서 i =1부터
+    // 계산할 때 헷갈려서 i = 1부터
     for (let i = 1; i <= n; i++) {
         const map = new Array(n + 1).fill(0); // [!] 어차피 한줄에 하나이므로 일차원 배열
         map[1] = i;
