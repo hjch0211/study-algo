@@ -5,3 +5,12 @@
 // p1();
 // p2();
 // p3();
+
+// const solution = () => {
+//     let result;
+//     return result;
+// };
+
+// module.exports = function p1() {
+//     console.log(solution());
+// };
