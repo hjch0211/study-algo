@@ -2,6 +2,7 @@
 // 최단 경로에 문제가 있음
 // 이 것도 백트래킹?
 // [!] 애초에 최단거리를 구할 때, "좌표"로 dist만 해주어도 상관없었음
+// BFS, DFS의 대표적인 유형이 있고,
 function solution(numbers, hand) {
     var answer = "";
     const _hand = hand === "right" ? "R" : "L";
