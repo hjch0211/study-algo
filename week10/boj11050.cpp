@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 int n, k;
 
 int facto(int f){
