@@ -1,8 +1,9 @@
 {
-    "files.associations": {
-        "cmath": "cpp",
-        "cstdio": "cpp",
-        "utility": "cpp",
-        "iostream": "cpp"
-    }
+  "files.associations": {
+    "cmath": "cpp",
+    "cstdio": "cpp",
+    "utility": "cpp",
+    "iostream": "cpp",
+    "algorithm": "cpp"
+  }
 }
