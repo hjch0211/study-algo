@@ -4,6 +4,8 @@
     "cstdio": "cpp",
     "utility": "cpp",
     "iostream": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "queue": "cpp",
+    "vector": "cpp"
   }
 }
