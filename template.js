@@ -1,23 +1,10 @@
-// const p1 = require("./p1");
-// const p2 = require("./p2");
-// const p3 = require("./p3");
-
-// p1();
-// p2();
-// p3();
-
-// const solution = () => {
-//     let result;
-//     return result;
-// };
-
-// module.exports = function p1() {
-//     console.log(solution());
-// };
-
 /**
- * Time :
- * Title :
- * Approach :
- * Review :
+ ⏰ Time : 
+ ✍️ Title :
+ 🤔 Approach :
+ 🚬 Review :
  */
+
+const fs = require("fs");
+const filePath = process.platform === "linux" ? "/dev/stdin" : "input.txt";
+const input = fs.readFileSync(filePath).toString().trim().split("\n");
